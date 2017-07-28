@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face {
+    font-family: Amiga;
+    src: url(afep.ttf) format('truetype');
+}
+@-webkit-keyframes head {
+	to {width: 21ch;}
+}
+@-webkit-keyframes tail {
+	to {opacity: 0;}
+}
+@keyframes head {
+	to {width: 21ch;}
+}
+@keyframes tail {
+	to {opacity: 0;}
+}
+body 				{background-color: black;
+					 color: #00FF80;
+	  				 font-family: Amiga, Arial, sans-serif;}
+address				{font-style: normal;}
+a[href^="mailto"]	{color: inherit;
+	  				 text-decoration: none;}
+div#h 				{width: 0ch;
+	  				 overflow: hidden;
+	  				 -webkit-animation: head 1.1s steps(21,start) 0.5s forwards;
+    				 animation: head 1.1s steps(21,start) 0.5s forwards;}
+span#t				{-webkit-animation: tail 1s infinite;
+					 animation: tail 1s infinite;}
+</style>
+</head>
+<body>
+
+<footer>
+<address>
+<div id="h"><a href="mailto:genesis@blockchain.gr">genesis@blockchain.gr</a><span id="t">_</span></div>
+</address>
+</footer> 
+
+</body>
+</html>
